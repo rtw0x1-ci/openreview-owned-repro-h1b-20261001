@@ -1,0 +1,9 @@
+{
+  "name": "openreview-owned-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node -e \"import('./app.js').then(m => { if (m.status() !== 'owned-repro-ok') process.exit(1); })\""
+  }
+}
